@@ -112,9 +112,13 @@ cp writer "${OUTDIR}"/rootfs/home/
 cp finder-test.sh "${OUTDIR}"/rootfs/home/
 cp finder.sh "${OUTDIR}"/rootfs/home/
 cp autorun-qemu.sh "${OUTDIR}"/rootfs/home/
+
 #cp -r conf "${OUTDIR}"/rootfs/home/
-mkdir -p ${OUTDIR}/rootfs/home/conf
-cp -rf conf/* ${OUTDIR}/rootfs/home/conf
+mkdir -p "${OUTDIR}"/rootfs/home/conf
+cp -rf conf/* "${OUTDIR}"/rootfs/home/conf
+# cp conf/username.txt ${OUTDIR}/rootfs/home/conf
+# cp conf/assignment.txt ${OUTDIR}/rootfs/home/conf
+
 
 # TODO: 
 echo "Chown the root directory"
